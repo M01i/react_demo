@@ -1,0 +1,38 @@
+.goods-box{
+    
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .goods-list-one{
+        border: thin solid #ccc;
+        margin-bottom: .2rem;
+        margin-top: .14rem;
+        width: 47%;
+        img{
+            width: 100%;
+        }
+        p{
+            margin: 0;
+        }
+        .goods-info{
+            padding: .15rem;
+            .goods-msg{
+                font-size: .32rem;
+            }
+            .goods-name{
+                color: #AEAEAE;
+                font-size: .20rem;
+            }
+            .now-price{
+                color: red;
+                font-size: .32rem;
+            }
+            .old-price{
+                color: #AEAEAE;
+                text-decoration: line-through;
+                font-size: .16rem;
+            }
+        }
+    }
+}

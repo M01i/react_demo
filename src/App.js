@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+import React, { Component } from 'react'
+// import Header from './components/header'
+import Main from './components/main'
+// import Footer from './components/footer'
+import Goods from './components/goods'
+import Login from './components/login'
+import Reg from './components/reg'
+import {withRouter,Switch,Route} from 'react-router-dom'
+@withRouter 
+class App extends Component{
+  render(){
+    return <div className='all-box'>
+      <Switch>
+        <Route path="/goods" component={Goods} />
+        <Route path="/login" component={Login} />
+        <Route path="/reg" component={Reg} />
+        <Main></Main>
+      </Switch>
+      
     </div>
-  );
+  }
 }
 
 export default App;

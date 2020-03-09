@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <meta charset="UTF-8">  
+    <title>调用jiathis分享接口和评论功能</title>  
+<head>
+
+</head>  
+<body>  
+    <div>  
+        <h2 id="title">龙腾世纪3:审判</h2>
+        <p id="summary">本作讲述大灾变事件将西达斯大陆陷入混乱，巨龙笼罩世界，以往的平和国度化为战争之地，魔法师将与圣殿骑士全面对抗，你将操控一支新的种族来重新定义秩序，打破混乱。</p>
+        <img src='http://img.pconline.com.cn/images/upload/upc/tx/wallpaper/1306/27/c5/22642221_1372321790270_800x600.jpg' title='分享图片'/>  
+
+    </div>  
+
+<script src='http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js'></script>  
+<!-- JiaThis Button END -->
+<script type="text/javascript""> 
+//分享框：设置分享文本和标题
+var jiathis_config = { 
+    url: window.location.href, 
+    title: $("#title").html(), 
+    summary:$("#summary").html()
+};
+//评论框：设置评论文本标题
+var uyan_config = {
+     //'title':'自定义网页标题 #微博话题#', //定义要分享页面的标题，没有填写默认获取TITLE标签内容。
+     //'url':'自定义网页链接',             //定义要分享页面的标题，没有填写默认获取TITLE标签内容。
+     //'pic':'自定义图片链接地址，设置为空值则不分享图片', //定义要分享页面的标题，没有填写默认获取TITLE标签内容。
+     //'vid':'自定义视频链接地址', //定义同步视频的链接地址，支持优酷、土豆等视频链接同步到微博等社会化媒体。
+     //'du':'自定义指定域名', // 定义指定域名，合并两个域名下的评论，如果用户访问域名包括www.xxx.com或xxx.com，定义后即可合并两个域名的评论，没有定义默认获取当前网页域名评论。
+     //'su':'自定义网页标识' // 定义指定域名，合并两个域名下的评论，如果用户访问域名包括www.xxx.com或xxx.com，定义后即可合并两个域名的评论，没有定义默认获取当前网页域名评论。
+};
+</script> 
+<!-- 分享框 S JiaThis Button BEGIN -->
+<div class="jiathis_style">
+    <span class="jiathis_txt">分享到：</span>
+    <a class="jiathis_button_qzone">QQ空间</a>
+    <a class="jiathis_button_tsina">新浪微博</a>
+    <a class="jiathis_button_tqq">腾讯微博</a>
+    <a class="jiathis_button_weixin">微信</a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+    <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- 分享框 E JiaThis Button END -->
+
+<!-- 评论框 S UY BEGIN -->
+<div id="uyan_frame"></div>
+<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js"></script>
+<!-- 评论框 E UY END -->
+
+<!--分享到的右侧浮窗效果： JiaThis Button BEGIN -->
+<script type="text/javascript" src="http://v3.jiathis.com/code/jiathis_r.js?move=0&amp;btn=r4.gif" charset="utf-8"></script>
+<!-- 分享到的右侧浮窗效果： JiaThis Button END -->
+</body> 
+</html>
+————————————————
+版权声明：本文为CSDN博主「ym_141414」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/qq_37718197/article/details/78363261

@@ -1,0 +1,238 @@
+p{
+    margin: 0;
+    padding: 0;
+}
+.goods{
+    height: 100%;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .goods-all{
+        padding: .2rem;
+        display: flex;
+        justify-content: space-between;
+        height: .9rem;
+        align-items: center;
+        .head-icon{
+            color: #CF0A2C;
+            font-size: .5rem;
+        }
+        span{
+            font-size: .4rem;
+        }
+    }
+    .goods-main-box{
+        flex: 1;
+        overflow: auto;
+        .fenge{
+            height: .25rem;
+            background-color: #ddd;
+            width: 100%;
+        }
+        .goods-top-img{
+            width: 100%;
+        }
+        .goods-info{
+            padding: .2rem;;
+            .now-price{
+                display: flex;
+                align-items: center;
+                color: #CF0A2C;
+                font-size: .5rem;
+                font-weight: 500;
+                .juan{
+                    border: thin solid #CF0A2C;
+                    margin-left: .2rem;
+                    font-size: .25rem;
+                }
+            }
+            .price{
+                font-size: .26rem;
+                color:#878787;
+                .old-price{
+                    text-decoration: line-through;
+                }
+            }
+            .goods-name{
+                margin: .15rem 0;
+            }
+            .num-msg{
+                font-size: .26rem;
+                color:#878787;
+                display: flex;
+                justify-content: space-between;
+            }
+            .less-money{
+                margin-top: .5rem;
+                .less-money-head{
+                    color: orange;
+                    background-color: #FFF2EB;
+                }
+                .youhui{
+                    display: flex;
+                    justify-content: space-between;
+                    
+                    p{
+                        span{
+                            border: thin solid orange;
+                            margin: 0 .1rem;
+                            color: orange;
+                        }
+                    }
+                }
+                .cuxiao{
+                    margin-left: 1.24rem;
+                    margin-top: .2rem;
+                    p{
+                        span{
+                            border: thin solid orange;
+                            margin: 0 .1rem;
+                            color: orange;
+                        }
+                        .cuxiao-msg{
+                            border: none;
+                            color: #878787;
+                        }
+                    }
+                }
+                
+            }
+        }
+        .goods-tj{
+    
+            .tj-head{
+                font-size: .35rem;
+                padding: .2rem;
+                border-bottom: thin solid #ccc;
+            }
+            .goods-tj-list{
+                padding: .2rem;
+                display: flex;
+                .goods-tj-box{
+                    margin-right: .2rem;
+                    font-size: .1rem;
+                    overflow: hidden;
+                    img{
+                        width: 1.7rem;
+                    }
+                    .goods-name{
+                        width: 1.7rem;
+                        height: .7rem;
+                        overflow: hidden;
+                    }
+                    .goods-price{
+                        color: #CF0A2C;
+                    }
+                }
+            }
+    
+    
+        }
+        .goods-post{
+            .post-head{
+                font-size: .35rem;
+                padding: .2rem;
+                border-bottom: thin solid #ccc;
+            } 
+            .post-box{
+                padding: .2rem;
+                display: flex;
+                justify-content: space-between;
+                .hot-post{
+                    flex: 1;
+                    padding: .1rem;
+                    display: flex;
+                    justify-content: space-between;
+                    border: thin solid #ddd;
+                    .user-head{
+                        border-radius: 50%;
+                        width: .5rem;
+                    }
+                    .icon{
+                        height: 1.5rem;
+                    }
+                }
+                .see-all{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #F2F5F8;
+                    width: 1.5rem;
+                    border: thin solid #000;
+                }
+            }
+        }
+        .buy-msg{
+            p{
+                padding: .2rem;
+                border: thin solid #ddd;
+                span{
+                    float: right;
+                }
+            }
+        }
+    
+    }
+    .goods-footer{
+        height: 1rem;
+        .join-car{
+            display: inline-block;
+            line-height: 1rem;
+            width: 2.5rem;
+            text-align: center;
+            background-color: #F5AD35;
+            color: #fff;
+            float: right;
+        }
+        .buy-now{
+            display: inline-block;
+            line-height: 1rem;
+            width: 2.5rem;
+            text-align: center;
+            background-color: #CF0A2C;
+            color: #fff;
+            float: right;
+        }
+    }
+}
+.goods-buy{
+    .goods-buy-info{
+        margin-bottom: 1rem;
+        display: flex;
+        color: black;
+        .buy-img{
+            width: 2rem;
+            height: 2rem;
+            margin-right: .6rem;
+        }
+        .goods-buy-price{
+            color: #CF0A2C;
+            font-size: .6rem;
+        }
+    }
+    .buy-num{
+        display: flex;
+        justify-content: space-between;
+        div{
+            display: flex;
+            border: thin solid #ddd;
+            justify-content: center;
+            width: 1.5rem;
+            .get-num{
+                width: 2.5rem;
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+    .go-buy{
+        background-color: #CF0A2C;
+        color: #fff;
+        width: 2rem;
+        line-height: .8rem;
+        text-align: center;
+        margin: auto;
+    }
+}

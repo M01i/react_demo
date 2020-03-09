@@ -1,0 +1,61 @@
+.shop_car{
+    .nothing-car{
+        height: 100%;
+        background-color: #ddd;
+        padding: 3.4rem .8rem;
+        text-align: center;
+        font-size: .8rem;
+    }
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .shop_list_box{
+        flex: 1;
+        overflow: auto;
+        .one_goods{
+            padding: .2rem;
+            display: flex;
+            justify-content: space-between;
+            border: thin solid #ddd;
+            margin: .3rem;
+            .goods_img{
+                width: 2.1rem;
+            }
+            .goods_info{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .now-price{
+                    color: red;
+                    font-size: .4rem;
+                }
+                .old-price{
+                    text-decoration: line-through;
+                }
+                .del_goods{
+                    border: thin solid #ccc;
+                    padding: .08rem;
+                }
+            }
+        }
+    }
+    
+    .pay_box{
+        color: black;
+        padding-left: .2rem;
+        background-color: #ddd;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 1rem;
+        .pay{
+            background-color: red;
+            color: #fff;
+            line-height: 1rem;
+            text-align: center;
+            width: 2rem;
+            border-radius: .1rem;
+        }
+    }
+}
